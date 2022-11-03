@@ -1,0 +1,9 @@
+version: '1'
+
+services:
+  web:
+    build: .
+    container_name: 2online-shop
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:10001:80
